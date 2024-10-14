@@ -1,0 +1,103 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.8 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.8">
+  <diagram name="Page-1" id="Mf4Qupo7xJ-zHIkVb_cZ">
+    <mxGraphModel dx="794" dy="511" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="d-5O9TcoZOKbOvuCnXNw-1" value="ROOM" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="100" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="d-5O9TcoZOKbOvuCnXNw-2" value="THINGS LEARNT" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="d-5O9TcoZOKbOvuCnXNw-3" value="CHALLENGES FACED" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="d-5O9TcoZOKbOvuCnXNw-4" value="HOW YOU SOLVED THE PROBLEM" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="d-5O9TcoZOKbOvuCnXNw-5" value="SMALL DETAILS ABOUT HTML,CSS AND JS" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="339" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="d-5O9TcoZOKbOvuCnXNw-6" value="ISSUES WITH TABLE ROWS AND DATA" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="220" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="d-5O9TcoZOKbOvuCnXNw-7" value="PEERS HELP" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="220" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="d-5O9TcoZOKbOvuCnXNw-8" value="BACKGROUND, FOUNDERS OF THE HTML" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="279" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="d-5O9TcoZOKbOvuCnXNw-9" value="LEARNT ABOUT MDN" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="399" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="d-5O9TcoZOKbOvuCnXNw-28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="d-5O9TcoZOKbOvuCnXNw-10" target="d-5O9TcoZOKbOvuCnXNw-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="d-5O9TcoZOKbOvuCnXNw-10" value="CSS" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="519" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="d-5O9TcoZOKbOvuCnXNw-11" value="JS" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="579" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="d-5O9TcoZOKbOvuCnXNw-12" value="ISSUES WITH DISPLAY IN CSS" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="d-5O9TcoZOKbOvuCnXNw-13" value="PEERS HELP" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="d-5O9TcoZOKbOvuCnXNw-14" value="ISSUES WITH JS METHODS" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="340" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="d-5O9TcoZOKbOvuCnXNw-15" value="LEARNT BOOTSTRAP FROM PEERS" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="639" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="d-5O9TcoZOKbOvuCnXNw-16" value="MDN DOCS" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="340" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="d-5O9TcoZOKbOvuCnXNw-17" value="META TAGS" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="699" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="d-5O9TcoZOKbOvuCnXNw-18" value="ARROW FUNCTION" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="759" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="d-5O9TcoZOKbOvuCnXNw-19" value="HOW TO USE GIT AND GITHUB" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="819" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="d-5O9TcoZOKbOvuCnXNw-20" value="CODING STANDARDS" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="219" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="d-5O9TcoZOKbOvuCnXNw-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="d-5O9TcoZOKbOvuCnXNw-21" target="d-5O9TcoZOKbOvuCnXNw-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="d-5O9TcoZOKbOvuCnXNw-21" value="HTML" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="459" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="d-5O9TcoZOKbOvuCnXNw-22" value="RULES OF HTML" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="459" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="d-5O9TcoZOKbOvuCnXNw-24" value="META AND SEMANTIC TAGS" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="519" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="d-5O9TcoZOKbOvuCnXNw-25" value="TABLE CREATION" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="579" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="d-5O9TcoZOKbOvuCnXNw-26" value="FORM CREATION" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="639" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="d-5O9TcoZOKbOvuCnXNw-27" value="USING BORDERS" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="519" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="d-5O9TcoZOKbOvuCnXNw-29" value="INLINE, INTERNAL AND EXTERNAL CSS" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="579" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="d-5O9TcoZOKbOvuCnXNw-30" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="639" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="d-5O9TcoZOKbOvuCnXNw-32" value="BOLD, ITALIC, STRONG AND EMPHASIS" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="699" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

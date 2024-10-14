@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>bulb problem</title>
+    <style>
+        .outer{
+            margin-top: 15px;
+            display: flex;
+            border: 2px solid black;
+        }
+        .offblb{
+            margin-left: 20%;
+            margin-right: 15%;
+            border: 2px solid white;
+        }
+        #nwblb{
+            border: 2px solid white;
+            width: 250px;
+            height: 250px;
+        }
+        #onblb{
+            margin-left: 40%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outer">
+
+        <div style="width:250px;height: 250px;" class="offblb">
+            <img src="../IMAGES/off.gif" style="margin:50px" id="bulb1"
+            onclick="window.document.getElementById('newblb').src='../IMAGES/off.gif'">
+        </div>
+        <div id="nwblb" >
+            <img src="" alt="" id="newblb" style="margin: 50px;">
+        </div>
+    </div>
+    <div class="outer">
+
+        <div id="onblb" style="width:250px;height: 250px;background-color: black;">
+            <img src="../IMAGES/on.gif" style="margin:50px" id="bulb2"
+            onclick="window.document.getElementById('bulb2').src=''">
+        </div>
+    </div>
+</body>
+</html>
