@@ -34,6 +34,7 @@
       background-size: cover;
     }
 
+
   </style>
   <script src="../JS/form1.js"></script>
   <script>
@@ -80,11 +81,11 @@
     <br>
 
     <label for="gender" class="bld">GENDER</label>
-    <input type="radio" name="gender" id="mgender">MALE
-    <input type="radio" name="gender" id="fgender">FEMALE
+    <input type="radio" name="gender" id="mgender" value="male">MALE
+    <input type="radio" name="gender" id="fgender" value="female">FEMALE
     <br><br>
     DATE OF BIRTH
-    <input type="date" name="" id="">
+    <input type="date" name="" id="dob">
     <br><br>
     CGPA(1-10)
     <input type="range" id="temp" name="temp" list="markers" />
@@ -97,23 +98,40 @@
     </datalist>
     <br> <br>
     BEVERAGE PREFERENCE
-    <input type="checkbox" name="BEVERAGE" id="1">TEA
-    <input type="checkbox" name="BEVERAGE" id="2">COFFEE
+    <input type="checkbox" name="BEVERAGE" id="bv1">TEA
+    <input type="checkbox" name="BEVERAGE" id="bv2">COFFEE
     <br><br>
     MEALS
-    <input type="radio" name="MEALS">VEG<input type="radio" name="MEALS">NON-VEG
+    <input type="radio" name="MEALS"id="veg">VEG
+    <input type="radio" name="MEALS" id="nonveg">NON-VEG
     <br>
     <br>
     PAYMENT
     <br>
     <select name="PAYMENT" id="pmt">PAYMENT
-      <option value="">credit card</option>
-      <option value="">debit card</option>
+      <option value="" id="crdt">credit card</option>
+      <option value="" id="dbt">debit card</option>
     </select>
     <br><br>
     <button type="submit" id="rgbtn" class="btn btn-primary" >Register now</button>
     <button type="reset" id="restbtn" class="btn btn-danger" onclick="alerted1()">Reset</button>
   </form>
+  <div class="tablediv">
+    <table id="table1">
+      <tr>
+        <th>name</th>
+        <th>email</th>
+        <th>pass</th>
+        <th>address</th>
+        <th>gender</th>
+        <th>dob</th>
+        <th>cgpa</th>
+        <th>bevrage</th>
+        <th>meals</th>
+        <th>payment</th>
+      </tr>
+    </table>
+  </div>
   <script>
     let name
     document.getElementById(name);

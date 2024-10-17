@@ -1,18 +1,24 @@
 function tablecreate(event){
     event.preventDefault();
-    const name=document.getElementById('name');
-    const emailid=document.getElementById('emailid');
-    const password=document.getElementById('password1');
+    const name=document.getElementById('name').value;
+    const emailid=document.getElementById('emailid').value;
+    const password=document.getElementById('password1').value;
+    const address=document.getElementById('txtarea').value;
+    const gender=document.querySelector("input[name='gender']:checked")? document.querySelector("input[name='gender']:checked").value:'';
 
-    const table= document.getElementById('tablename');
+    const table= document.getElementById('table1');
     const row=table.insertRow();
 
     const fname=row.insertCell(0);
     const fmail=row.insertCell(1);
     const fpass=row.insertCell(2);
+    const faddr=row.insertCell(3);
+    const fgen=row.insertCell(4);
 
     fname.textContent=name;
     fmail.textContent=emailid;
     fpass.textContent=password;
+    faddr.textContent=address;
+    fgen.textContent=gender;
 }
 tablecreate();
