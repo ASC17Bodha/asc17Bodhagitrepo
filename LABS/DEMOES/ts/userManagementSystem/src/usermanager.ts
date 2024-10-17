@@ -16,16 +16,17 @@ import { User } from "./User";
         console.log("User",user1.name,"removed successfully");
     }
 
-    searchUser(name1:string):User{
-        for(var i=0;i<this.users.length;i++){
-            if(this.users[i].name.toLowerCase().startsWith(name1.toLocaleLowerCase())){
-                console.log(" User",name1,"found ");
-                return this.users[i];
-            }
-        }
-        return null;
+    searchUser(name1:string):User[]{
+        // for(var i=0;i<this.users.length;i++){
+        //     if(this.users[i].name.toLowerCase().startsWith(name1.toLocaleLowerCase())){
+        //         console.log(" User",name1,"found ");
+        //         return this.users[i];
+        //     }
+        // }
+        // return null;
+        const person=this.users.filter(user=>user.name==name1);
+        return person;
     }
-//  try adding search method()
 }
 
 // let userManager=new UserManager();
