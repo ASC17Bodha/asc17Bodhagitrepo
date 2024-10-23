@@ -36,23 +36,27 @@
     }
     #outdiv{
       display: flex;
-      margin-left: 20%;
+      margin-left: 15%;
     }
     #tablediv{
+      margin-top: 20px;
       margin-left: 10px;
-      border: 1px solid white;
+      border: 1px solid;
+      border-style: hidden;
     }
     #formdiv{
-      border: 1px solid white;
+      border: 1px solid;
+      border-style: hidden;
     }
     table,th,td{
+      padding: 5px;
       border: 1px solid black;
       border-collapse: collapse;
     }
 
 
   </style>
-  <script src="../JS/form1.js"></script>
+  <script src="../JS/form2.js"></script>
   <script>
     function alerted1() {
       alert(`FORM RESET`);
@@ -81,7 +85,7 @@
 
     <div id="formdiv">
       
-      <form action="outtable.html" onsubmit="tablecreate(event);" method="get">
+      <form  onsubmit="tablecreate(event);" method="get">
         
         <H1>PORTFOLIO REGISTRATION</H1>
         <label for="name" class="bld">NAME</label>
@@ -145,11 +149,11 @@
           <th>pass</th>
           <th>address</th>
           <th>gender</th>
-        <th>dob</th>
+        <!-- <th>dob</th>
         <th>cgpa</th>
         <th>bevrage</th>
         <th>meals</th>
-        <th>payment</th>
+        <th>payment</th> -->
       </tr>
     </table>
   </div>

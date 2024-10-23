@@ -20,5 +20,25 @@ function tablecreate(event){
     fpass.textContent=password;
     faddr.textContent=address;
     fgen.textContent=gender;
+
+    const formlocal = {
+        name:name,
+        emailid:emailid,
+        password:password,
+        address:address,
+        gender:gender
+    };
+
+    let savedata=JSON.parse(localStorage.getItem('formlocal'))||[];
+    savedata.push(formlocal);
+    localStorage.setItem('formlocal',JSON.stringify(savedata));
+
+    document.querySelector('form').reset();
+
 }
+
+window.onload=function(){
+    let savedata=JSON.parse(localStorage.getItem('formlocal'))||[];
+};
+
 tablecreate();
