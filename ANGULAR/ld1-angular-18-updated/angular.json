@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ld1-angular-18": {
+    "ld1-angular-18-updated": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/ld1-angular-18",
+            "outputPath": "dist/ld1-angular-18-updated",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -23,10 +23,8 @@
             "assets": [
               {
                 "glob": "**/*",
-                "input": "public",
-                "output": "/public"
+                "input": "public"
               }
-
             ],
             "styles": [
               "src/styles.css"
@@ -61,10 +59,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "ld1-angular-18:build:production"
+              "buildTarget": "ld1-angular-18-updated:build:production"
             },
             "development": {
-              "buildTarget": "ld1-angular-18:build:development"
+              "buildTarget": "ld1-angular-18-updated:build:development"
             }
           },
           "defaultConfiguration": "development"
