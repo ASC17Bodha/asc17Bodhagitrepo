@@ -67,10 +67,30 @@
 </body>
 </html> -->
 
+<div id="bdydiv">
 
-<h1>My Angular App....</h1>
-<h2>Property: {{title}}</h2>
-<h3>List of Users</h3>
-<ol *ngFor="let user of users">
-  <li>{{user.id}}</li>
-</ol>
+  <h1>My Angular App....</h1>
+  <h2>Property: {{title}}</h2>
+  <!-- <h3>List of Users</h3>
+  <ol *ngFor="let user of users" class="table-black">
+    <li>{{user.id}} {{user.name}} {{user.salary}}</li>
+  </ol> -->
+  
+  <h3>List of Users</h3>
+  <table class="table thead-black" >
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Salary</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td>{{ user.id }}</td>
+        <td>{{ user.name }}</td>
+        <td>{{ user.salary }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
