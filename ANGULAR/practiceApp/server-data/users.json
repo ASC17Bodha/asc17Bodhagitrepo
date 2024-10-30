@@ -1,0 +1,45 @@
+{
+  "User": [
+    {
+      "id": "2",
+      "name": "amit",
+      "email-id": "amit@mail.com",
+      "password": "amit@123",
+      "address": "bbmp mall, bengaluru",
+      "gender": "male"
+    },
+    {
+      "id": "3",
+      "name": "niitsh",
+      "emailid": "agdsfasdf@gdma.com",
+      "password": "hdfgh",
+      "address": "dsaf",
+      "gender": "Male"
+    },
+    {
+      "id": "4",
+      "name": "niitsh",
+      "emailid": "agdsfasdf@gdma.com",
+      "password": "ytgj",
+      "address": "dsaf",
+      "gender": "Male"
+    },
+    {
+      "id": "1",
+      "name": "anet",
+      "email-id": "ane@mail.com",
+      "password": "ane@123",
+      "address": "bbmp mall",
+      "gender": "Female",
+      "emailid": "anet@123"
+    },
+    {
+      "id": "5",
+      "name": "ewjfasdlkjldsa",
+      "emailid": "agdsfasdf@gdma.com",
+      "password": "hstg",
+      "address": "dsafrates",
+      "gender": "Male"
+    }
+  ]
+}

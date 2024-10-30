@@ -1,6 +1,8 @@
 {
   "dependencies": {
     "@angular/cli": "^18.2.9",
+    "openai": "^4.68.4",
+    "prompt-sync": "^4.2.0",
     "readline-sync": "^1.4.10"
   }
 }

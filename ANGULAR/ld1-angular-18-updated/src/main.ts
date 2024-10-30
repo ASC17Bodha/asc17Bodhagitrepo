@@ -5,6 +5,6 @@ import { AdduserComponent } from './app/adduser/adduser.component';
 
 // bootstrapApplication(AppComponent, appConfig)
 //   .catch((err) => console.error(err));
-bootstrapApplication(AdduserComponent
+bootstrapApplication(AppComponent
   , appConfig)
   .catch((err) => console.error(err));

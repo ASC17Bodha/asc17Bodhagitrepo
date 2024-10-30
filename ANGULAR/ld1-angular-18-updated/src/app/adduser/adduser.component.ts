@@ -10,14 +10,14 @@ import { UserService } from '../service/user-service';
   styleUrl: './adduser.component.css'
 })
 export class AdduserComponent  {
-  addForm:FormGroup;
-  constructor(private formBuilder:FormBuilder,
-    private userService: UserService){
-      this.addForm=this.formBuilder.group({
-        id:[Validators.required],
-        name:[],
-        salary:[]
-      });
-    }
+  // addForm:FormGroup;
+  // constructor(private formBuilder:FormBuilder,
+  //   private userService: UserService){
+  //     this.addForm=this.formBuilder.group({
+  //       id:[Validators.required],
+  //       name:[],
+  //       salary:[]
+  //     });
+  //   }
 
 }
