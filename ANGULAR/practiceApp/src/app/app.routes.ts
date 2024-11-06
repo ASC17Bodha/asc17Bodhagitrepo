@@ -6,8 +6,8 @@ import { AppComponent } from './app.component';
 import { portfolio } from './portfolio/portfolio.component';
 
 export const routes: Routes = [
-    {path:'',component:AppComponent},
-    {path:'Home',component:ApphomeComponent
+    // {path:'',component:AppComponent},
+    {path:'',component:ApphomeComponent
         // children:[
         //     {
         //         path:'portfolio',

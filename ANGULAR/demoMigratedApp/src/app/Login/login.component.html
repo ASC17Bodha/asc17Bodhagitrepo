@@ -1,0 +1,32 @@
+<form [formGroup]="loginform" (ngSubmit)="handleSubmit()" class="container ">
+    <label for="id">
+        Id:
+        <input type="text" id="Id" formControlName="Id"/>
+    </label>
+    <label for="pass">
+        Password:
+        <input type="password" id="pass" formControlName="pass"/>
+    </label>
+    <button type="submit">Submit</button>
+    <p>{{ loginform.get('Id')?.value }} - {{ loginform.get('pass')?.value }}</p>
+</form>
+
+
+
+
+
+
+
+
+<!-- <form  [formGroup]="loginform" (ngSubmit)="handleSubmit()">
+    <label for="id">
+        Id:
+        <input type="text" id="Id" formControlName="Id"/>
+    </label>
+    <label for="pass">
+        Password:
+        <input type="text" id="pass" formControlName="pass"/>
+    </label>
+    <button type="submit">submit</button>
+    {{this.loginform.value.Id}}-{{this.loginform.value.pass}}
+</form> -->

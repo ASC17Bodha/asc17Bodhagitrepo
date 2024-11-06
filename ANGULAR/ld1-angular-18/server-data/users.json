@@ -1,12 +1,14 @@
 {
-    "User":[{
-    "id":1,
-    "name":"ane",
-    "salary":"300"
-},
-{
-    "id":2,
-    "name":"anee",
-    "salary":"3000"
-}]
+  "User": [
+    {
+      "id":"1",
+      "name":"ane",
+      "salary":"300"
+    },
+    {
+      "id": "2",
+      "name": "anee",
+      "salary": "3000"
+    }
+  ]
 }
