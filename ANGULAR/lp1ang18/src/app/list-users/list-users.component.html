@@ -1,11 +1,18 @@
-<p>list-users works!</p>
+<div id="bodycontainer">
 
-<div class="container">
     <br>
+    <div id="searchdiv" class="container">
+        <input type="text" class="input" [(ngModel)]="searchinp" name="searchinp">
+        <button type="button" class="btn btn-dark" (click)="searchUser()">search</button>
+    </div>
+
+    <div class="container">
+        <br>
     <h4>User-Details</h4>
+
     <div>
-        <div class="table-striped" style="width: 500px;">
-            <table class="table">
+        <div class="table-striped" >
+            <table class="table table-striped">
                 <thead>
                     <tr>
                         <th>ID</th>
@@ -21,11 +28,36 @@
                         <td>{{user.name}}</td>
                         <td>{{user.salary}}</td>
                         <td><button class="btn btn-danger"(click)="deleteUser(user.id)">X</button></td>
-                        <td><button class="btn btn-ok">Update</button></td>
+                        <td><button class="btn btn-primary"(click)="updateUser(user.id)">Update</button></td>
                     </tr>
                 </tbody>
             </table>
         </div>
     </div>
+    <div id="disptable"  class="table-striped">
+        <table class="table table-striped">
+
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>NAME</th>
+                    <th>SALARY</th>
+                    <th>Send Away</th>
+                    <th>Change</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let user of searchedusers">
+                    <td>{{user.id}}</td>
+                    <td>{{user.name}}</td>
+                    <td>{{user.salary}}</td>
+                    <td><button class="btn btn-danger"(click)="deleteUser(user.id)">X</button></td>
+                    <td><button class="btn btn-primary"(click)="updateUser(user.id)">Update</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <button class="btn btn-danger" (click)="logut()">logout</button>
 </div>
  
+</div>

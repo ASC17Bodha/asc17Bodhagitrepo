@@ -1,11 +1,16 @@
-<div  id="logid">
+<div id="bodycontent">
+<br>
+<div  id="logid" class="container">
+<h4 class="container">Login</h4>
     <form [formGroup]= "loginForm">
-        Login Id:
-        <input type="text" formControlName="loginid">
-        <br><br>
+    Login Id:
+    <input type="text" class="form-control" formControlName="loginid">
+        
     Password:
-    <input type="password" formControlName="password">
-    <br><br>
-    <button (click)="onSubmit()">Login</button>
+    <input type="password" class="form-control" formControlName="password">
+    <br>
+    <button (click)="onSubmit()" class="btn btn-success">Login</button>
 </form>
+</div>
+
 </div>

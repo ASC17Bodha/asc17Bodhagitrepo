@@ -1,9 +1,16 @@
 #logid{
-    border: 1px solid black;
-    padding:4px;
-    border-radius: 2px;
-    display: flex;
-    justify-content: center;
-    width: 200px;
-    margin-left: 400px;
+ padding-top: 25px;
+ border: 1px solid black;
+ width: 400px;
+ height: 350px;
+ margin-top: 40px;
+ background-color: rgb(240, 237, 233,0.3);
+ backdrop-filter: blur(2px);
+}
+
+#bodycontent{
+
+    background: url(../../../public/blue-vector-background-hd-free.jpg) fixed no-repeat center;
+    background-size: cover;
+    height:515px;
 }

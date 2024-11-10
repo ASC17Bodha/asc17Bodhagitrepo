@@ -26,7 +26,7 @@ export class LoginComponent implements OnInit{
 
         if(loginid==="teddy"&&password==="teddy"){
             console.log("login success");
-            sessionStorage.setItem("loginid","yes");
+            sessionStorage.setItem("loggedIn","yes");
             this.router.navigate(["/User"]);
         }
         else console.log("login unsuccessful");
