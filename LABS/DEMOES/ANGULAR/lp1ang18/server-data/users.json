@@ -1,0 +1,36 @@
+{
+  "User": [
+    {
+      "id": "2",
+      "Name": "aneet",
+      "salary": "30000000000"
+    },
+    {
+      "id": "1",
+      "Name": "anee",
+      "salary": "30000"
+    },
+    {
+      "id": "3cab68a3-3dfd-42ea-9f6b-6bb39304f0ec",
+      "Name": "admin@23",
+      "salary": 36000098
+    }
+  ],
+  "Registration": [
+    {
+      "username": "aneet@123",
+      "password": "123456789",
+      "id": "1491"
+    },
+    {
+      "id": "4996",
+      "username": "admin@1235",
+      "password": "admin@1234"
+    },
+    {
+      "id": "3cab68a3-3dfd-42ea-9f6b-6bb39304f0ec",
+      "username": "admin@12353",
+      "password": "admin@12347"
+    }
+  ]
+}
