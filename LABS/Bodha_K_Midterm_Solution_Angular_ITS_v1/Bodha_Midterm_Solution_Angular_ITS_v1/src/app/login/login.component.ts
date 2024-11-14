@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-login',
@@ -30,7 +31,17 @@ export class LoginComponent implements OnInit {
       this.router.navigate(["/Issues"]);
         console.log("login success");
         sessionStorage.setItem("loggedIn","yes");
-    }
+        Swal.fire({
+          icon: "success",
+          title: "",
+          text: "Login Successful",
+    });
+  }
     else console.log("login unsuccessful",username1,password1);
+    Swal.fire({
+      icon: "error",
+      title: "",
+      text: "Login Failed",
+});
 }
 }

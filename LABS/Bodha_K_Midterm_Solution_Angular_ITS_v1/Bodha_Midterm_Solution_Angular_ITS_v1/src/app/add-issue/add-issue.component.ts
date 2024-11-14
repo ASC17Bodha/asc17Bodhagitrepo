@@ -4,6 +4,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
 import { IssueService } from '../services/issue.service';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-add-issue',
@@ -42,6 +43,11 @@ export class AddIssueComponent implements OnInit {
     formValue.id = formValue.issueId;
 
     this.issueService.createIssue(formValue).subscribe(data => {
+      Swal.fire({
+        icon: "success",
+        title: "",
+        text: "Issue Created",
+  });
       this.router.navigate(['/Issues']);
     });
   }
