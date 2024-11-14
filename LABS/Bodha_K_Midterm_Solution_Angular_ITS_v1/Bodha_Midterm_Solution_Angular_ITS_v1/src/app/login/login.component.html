@@ -1,0 +1,15 @@
+<div id="bodycontainer">
+
+    <div class="container mt-5 p-4 shadow-lg rounded " id="formcontainer">
+        <form [formGroup]="loginForm" class="form-group">
+            Username:
+            <input class="form-control" type="text" fromControlName="Username">
+            Password:
+            <input class="form-control" type="password" formControlName="password">
+            <br>
+            <button class="btn btn-primary" (click)="onSubmit()">Login</button>
+            &nbsp;
+            <!-- <button type="reset" class="btn btn-warning">Reset</button> -->
+        </form>
+    </div>
+</div>
