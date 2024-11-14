@@ -12,7 +12,6 @@ import { AddIssueComponent } from "./add-issue/add-issue.component";
 const routes:Routes=[
     {path:'',component:HomeComponent},
     {path:'Login',component:LoginComponent},
-    {path:'Issues',component:ListissuesComponent},
     {path:'update/:issueId',component:UpdateIssueComponent},
     {path:'addissue',component:AddIssueComponent},
     {path:'Issues',component:ListissuesComponent,canActivate:[AuthGuardService]},

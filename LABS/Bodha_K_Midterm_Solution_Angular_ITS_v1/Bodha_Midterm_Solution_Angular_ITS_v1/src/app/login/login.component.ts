@@ -16,21 +16,21 @@ export class LoginComponent implements OnInit {
   }
   ngOnInit(): void {
     this.loginForm=this.formbuilder.group({
-      username:['',[Validators.required]],
-      password:['',[Validators.required]]
+      username:['nits'],
+      password:[]
     });
   }
   onSubmit(){
     console.log(this.loginForm.value);
-    const username:string=this.loginForm.get("username").value;
-    const password:string=this.loginForm.get("password").value;
-    this.router.navigate(["/Issues"]);
+    const username1:string=this.loginForm.get("username").value;
+    const password1:string=this.loginForm.get("password").value;
+    // this.router.navigate(["/Issues"]);
     
-    if(username==="nits"&&password==="nits"){
+    if(username1==="nits"&&password1==="nits"){
       this.router.navigate(["/Issues"]);
         console.log("login success");
         sessionStorage.setItem("loggedIn","yes");
     }
-    else console.log("login unsuccessful");
+    else console.log("login unsuccessful",username1,password1);
 }
 }
