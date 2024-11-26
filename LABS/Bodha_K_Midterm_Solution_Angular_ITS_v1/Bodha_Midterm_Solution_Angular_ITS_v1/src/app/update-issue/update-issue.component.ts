@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Issue } from '../models/issues.model';
 import { IssueService } from '../services/issue.service';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-update-issue',
@@ -39,5 +40,10 @@ export class UpdateIssueComponent implements OnInit {
         error => console.log(error)
       );
     this.router.navigate(['/Issues']);
+    Swal.fire({
+      icon: "success",
+      title: "",
+      text: "Issue Updated",
+  });
   }
 } 

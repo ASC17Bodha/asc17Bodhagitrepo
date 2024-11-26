@@ -7,7 +7,7 @@
       "description": "Problem with login validation",
       "priority": "medium",
       "status": "Open",
-      "asignee": "nitish",
+      "asignee": "niti",
       "date": "22-08-2024"
     },
     {
@@ -15,20 +15,10 @@
       "issueId": "2",
       "title": "reg issues",
       "description": "Problem with login validation123",
-      "priority": "medium",
+      "priority": "medi",
       "status": "Open",
       "asignee": "rajat",
-      "date": "2024-11-11"
-    },
-    {
-      "id": "5",
-      "issueId": "5",
-      "title": "laptop",
-      "description": "laptop problem",
-      "priority": "high",
-      "status": "Open",
-      "asignee": "rajat",
-      "date": "2024-11-13"
+      "date": ""
     }
   ]
 }

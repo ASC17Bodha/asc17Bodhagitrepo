@@ -31,7 +31,7 @@ deleteIssue(id:number){
   Swal.fire({
     icon: "success",
     title: "",
-    text: "deletion Successful",
+    text: "Issue Deleted",
 });
 }
 
@@ -48,11 +48,21 @@ searchIssue(){
 logut(){
   sessionStorage.setItem("loggedIn","no");
   this.router.navigate(["/"]);
-  Swal.fire({
+  const Toast = Swal.mixin({
+    toast: true,
+    position: "top-end",
+    showConfirmButton: false,
+    timer: 3000,
+    timerProgressBar: true,
+    didOpen: (toast) => {
+      toast.onmouseenter = Swal.stopTimer;
+      toast.onmouseleave = Swal.resumeTimer;
+    }
+  });
+  Toast.fire({
     icon: "success",
-    title: "",
-    text: "Logged Out",
-});
+    title: "Signed out "
+  });
 }
 addIssue(){
   this.router.navigate(['/addissue']);
