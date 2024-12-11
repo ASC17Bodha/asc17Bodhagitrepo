@@ -1,0 +1,26 @@
+<h2>Courses</h2>
+
+<button (click)="fetchCourses()">Refresh List</button>
+<ul>
+  <li *ngFor="let course of courses" (click)="onSelect(course)">
+    {{ course.name }} - {{ course.description }}
+  </li>
+</ul>
+
+<div *ngIf="selectedCourse">
+  <h3>Selected Course</h3>
+  <p>Name: {{ selectedCourse.name }}</p>
+  <p>Description: {{ selectedCourse.description }}</p>
+  
+  <button (click)="createCourse()">Create New Course</button>
+  <button (click)="updateCourse()">Update Course</button>
+  <button (click)="deleteCourse()">Delete Course</button>
+</div>
+
+<form [formGroup]="courseForm" (ngSubmit)="onFormSubmit()">
+  <input formControlName="name" placeholder="Course Name">
+  <textarea formControlName="description" placeholder="Course Description"></textarea>
+  <button type="submit">Submit</button>
+</form>
+
+<div *ngIf="error">{{ error }}</div>

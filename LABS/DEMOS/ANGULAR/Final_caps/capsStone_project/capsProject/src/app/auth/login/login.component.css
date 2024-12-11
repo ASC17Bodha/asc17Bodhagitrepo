@@ -1,0 +1,142 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f7f7f7;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Container */
+.container {
+  max-width: 450px;
+  margin: 120px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+}
+
+/* Heading */
+h2 {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #5e4b8b;
+  margin-bottom: 35px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 25px;
+}
+
+/* Label */
+label {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 8px;
+  display: block;
+}
+
+/* Input Fields */
+input.form-control {
+  font-size: 1.1rem;
+  padding: 12px;
+  width: 100%;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input.form-control:focus {
+  border-color: #5e4b8b;
+  box-shadow: 0 0 10px rgba(94, 75, 139, 0.3);
+  outline: none;
+}
+
+/* Button Styles */
+button[type="button"] {
+  width: 100%;
+  padding: 14px;
+  background-color: #5e4b8b;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button[type="button"]:hover {
+  background-color: #4b3c6f;
+  transform: scale(1.05);
+}
+
+/* Disabled Button & Input */
+button:disabled, input:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* Info and Error Messages */
+.text-info {
+  font-size: 1rem;
+  color: #17a2b8;
+  margin-top: 10px;
+}
+
+.text-danger {
+  font-size: 1rem;
+  color: #dc3545;
+  margin-top: 10px;
+}
+
+/* Placeholder text styling */
+input::placeholder {
+  color: #888;
+  opacity: 1;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 576px) {
+  .container {
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  label {
+    font-size: 1rem;
+  }
+
+  input.form-control {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  button[type="button"] {
+    font-size: 1.1rem;
+    padding: 12px;
+  }
+}

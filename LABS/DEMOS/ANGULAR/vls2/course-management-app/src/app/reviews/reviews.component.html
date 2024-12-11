@@ -1,0 +1,26 @@
+<h2>Reviews</h2>
+
+<button (click)="fetchReviews()">Refresh List</button>
+<ul>
+  <li *ngFor="let review of reviews" (click)="onSelect(review)">
+    {{ review.title }} - {{ review.content }}
+  </li>
+</ul>
+
+<div *ngIf="selectedReview">
+  <h3>Selected Review</h3>
+  <p>Title: {{ selectedReview.title }}</p>
+  <p>Content: {{ selectedReview.content }}</p>
+  
+  <button (click)="createReview()">Create New Review</button>
+  <button (click)="updateReview()">Update Review</button>
+  <button (click)="deleteReview()">Delete Review</button>
+</div>
+
+<form [formGroup]="reviewForm" (ngSubmit)="onFormSubmit()">
+  <input formControlName="title" placeholder="Title">
+  <textarea formControlName="content" placeholder="Content"></textarea>
+  <button type="submit">Submit</button>
+</form>
+
+<div *ngIf="error">{{ error }}</div>

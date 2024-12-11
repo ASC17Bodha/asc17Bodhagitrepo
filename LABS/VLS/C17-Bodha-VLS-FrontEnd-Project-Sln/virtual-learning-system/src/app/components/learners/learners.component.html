@@ -1,0 +1,55 @@
+<div class="container">
+    <h2>Learners Management</h2>
+    <form (ngSubmit)="addLearner()">
+      <div>
+        <label>Name:</label>
+        <input type="text" [(ngModel)]="learner.name" name="name" required />
+      </div>
+      <div>
+        <label>Email:</label>
+        <input type="email" [(ngModel)]="learner.email" name="email" required />
+      </div>
+      <div>
+        <label>Phone:</label>
+        <input type="text" [(ngModel)]="learner.phone" name="phone" required />
+      </div>
+      <div>
+        <label>Enrolled Courses (comma-separated IDs):</label>
+        <input
+          type="text"
+          [(ngModel)]="enrolledCoursesInput"
+          name="enrolledCourses"
+          required
+        />
+      </div>
+      <button type="submit">{{ editing ? 'Update Learner' : 'Add Learner' }}</button>
+    </form>
+  
+    <h3>Registered Learners</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Phone</th>
+          <th>Enrolled Courses</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let learner of learners">
+          <td>{{ learner.id }}</td>
+          <td>{{ learner.name }}</td>
+          <td>{{ learner.email }}</td>
+          <td>{{ learner.phone }}</td>
+          <td>{{ learner.enrolledCourses.join(', ') }}</td>
+          <td>
+            <button (click)="editLearner(learner)">Edit</button>
+            <button (click)="deleteLearner(learner.id)">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
