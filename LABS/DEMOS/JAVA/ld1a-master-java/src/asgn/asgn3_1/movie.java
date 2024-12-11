@@ -9,17 +9,21 @@ public class movie {
     private int duration; 
     private int year;
     private String category;
+    private static int moviesCount = 0;
+    private String movieId;
 
-    public movie(String movieName, String producedBy) {
+    movie(String movieName, String producedBy) {
         if (movieName == null || producedBy == null || movieName.isEmpty() || producedBy.isEmpty()) {
             throw new IllegalArgumentException("movie name and produced by are mandatory fields.");
         }
+        moviesCount++;
         this.movieName = movieName;
+        this.movieId = this.movieName+"_"+moviesCount;
         this.producedBy = producedBy;
     }
 
 
-    public movie(String movieName, String producedBy, String directedBy, int duration, int year, String category) {
+    movie(String movieName, String producedBy, String directedBy, int duration, int year, String category) {
         this(movieName, producedBy); 
         this.directedBy = directedBy;
         this.duration = duration;
@@ -75,6 +79,11 @@ public class movie {
         this.category = category;
     }
 
+    public void getmovieId() {
+        System.out.println("movie Id: " + movieId);
+    }
+
+
     public void displaymovieInfo() {
         System.out.println("movie Name: " + movieName);
         System.out.println("Produced By: " + producedBy);
@@ -82,6 +91,9 @@ public class movie {
         System.out.println("Duration: " + (duration > 0 ? duration + " minutes" : "N/A"));
         System.out.println("Year: " + (year > 0 ? year : "N/A"));
         System.out.println("Category: " + (category != null ? category : "N/A"));
+        System.out.println(moviesCount + " movies created.");
+        getmovieId();
     }
 }
+
 

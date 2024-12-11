@@ -8,7 +8,7 @@
      Login Id:
      <input type="text" class="form-control" formControlName="loginid" [ngClass]="{'is-invalid':loginForm.get('loginid').invalid && loginForm.get('loginid').touched, boldItalic:true}" placeholder="Enter Login Id">
      <div *ngIf="loginForm.get('loginid').invalid && loginForm.get('loginid').touched">
-        <div *ngIf="loginForm.get('loginid').errors.required">
+        <div *ngIf="loginForm.get('loginid')">
             Login Id is required
         </div>
     </div>
